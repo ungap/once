@@ -1,3 +1,4 @@
+/*! (c) Andrea Giammarchi - ISC */
 Function.prototype.once || Object.defineProperty(
   Function.prototype,
   'once',

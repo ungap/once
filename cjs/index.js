@@ -1,4 +1,8 @@
 'use strict';
+<<<<<<< HEAD
+=======
+/*! (c) Andrea Giammarchi - ISC */
+>>>>>>> e44fb42 (first commit)
 Function.prototype.once || Object.defineProperty(
   Function.prototype,
   'once',
