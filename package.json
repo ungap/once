@@ -11,15 +11,11 @@
     "coveralls": "c8 report --reporter=text-lcov | coveralls",
     "test": "c8 node test/index.js"
   },
-<<<<<<< HEAD
-  "keywords": ["once", "polyfill", "function"],
-=======
   "keywords": [
     "once",
     "polyfill",
     "function"
   ],
->>>>>>> e44fb42 (first commit)
   "author": "Andrea Giammarchi",
   "license": "ISC",
   "devDependencies": {
@@ -39,10 +35,6 @@
     },
     "./package.json": "./package.json"
   },
-<<<<<<< HEAD
-  "unpkg": "es.js"
-}
-=======
   "unpkg": "es.js",
   "repository": {
     "type": "git",
@@ -53,4 +45,3 @@
   },
   "homepage": "https://github.com/ungap/once#readme"
 }
->>>>>>> e44fb42 (first commit)
