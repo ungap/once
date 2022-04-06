@@ -2,6 +2,9 @@
   'use strict';
 
   /*! (c) Andrea Giammarchi - ISC */
+
+  const {apply, construct} = Reflect;
+
   Function.prototype.once || Object.defineProperty(
     Function.prototype,
     'once',
@@ -13,7 +16,9 @@
         return function once() {
           if (execute) {
             execute = false;
-            returned = fn.apply(this, arguments);
+            returned = this instanceof once ?
+                        construct(fn, arguments) :
+                        apply(fn, this, arguments);
           }
           return returned;
         };
